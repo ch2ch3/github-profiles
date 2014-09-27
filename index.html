@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="public/css/reset.css">
 	<link type="text/css" rel="stylesheet" href="public/css/styles.css">
-	<title>Github Profiles</title>
+	<title>GitHub Profiles</title>
 </head>
 <body>
 	<div id="container">
@@ -13,22 +13,26 @@
 			<button type="submit">Hit me!</button>
 		</form>
 		<main class="profile-container">
-			<!-- <article class="profile">
+		</main>
+		<template id="profile-template">
+			<article class="profile">
 				<section class="avatar">
-					<img src="#">
+					<img src="{{avatar_url}}">
 				</section>
 				<section class="statistics">
 					<h3>
-						<a href="#">ch2ch3</a>
+						<a href="{{html_url}}">{{login}}</a>
 					</h3>
-					<strong>Repos: 19</strong>
-					<strong>Followers: 23</strong>
+					<strong>Repos: {{public_repos}}</strong>
+					<strong>Followers: {{followers}}</strong>
 				</section>
 				<br clear="all">
-			</article> -->
-		</main>
+			</article>
+		</template>
 	</div>
 	<script src="public/js/lib/jquery-2.1.1.min.js"></script>
-	<script src="public/js/lib/GithubProfiles.js"></script>
+	<script src="public/js/lib/mustache.js"></script>
+	<script src="public/js/lib/templateCheck.js"></script>
+	<script src="public/js/lib/gitHubProfiles.js"></script>
 </body>
 </html>

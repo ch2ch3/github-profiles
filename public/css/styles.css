@@ -28,3 +28,7 @@ strong {
 	float: left;
 	margin-right: 10px;
 }
+
+input:focus {
+	outline: none;
+}
