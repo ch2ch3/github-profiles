@@ -1,34 +1,96 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
 #container {
-	max-width: 620px;
-	margin: 70px auto;
-}
-
-strong {
-	display: block;
-}
-
-#add-profile {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.profile-container {
+	max-width: 640px;
 	margin: 0 auto;
 }
 
-.profile {
-	background-color: #ddd;
-	margin: 0 auto 20px;
-	width: 300px;
-	padding: 10px;
+a {
+	text-decoration: none;
+	color: #EEEEEE;
 }
 
-.avatar img {
-	width: 100px;
-	float: left;
-	margin-right: 10px;
+#add-profile {
+	margin-top: 200px;
+	margin-bottom: 40px;
+	text-align: center;
+	transition: all 0.2s ease;
 }
 
-input:focus {
+#get-username:focus {
 	outline: none;
+}
+
+#get-username {
+	border: none;
+	border-bottom: solid 1px black;
+	width: 350px;
+	padding: 5px 8px;
+	margin-right: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+}
+
+#add-profile button {
+	border: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+	padding: 5px 15px;
+	background-color: #B2C26E;
+	color: #FFFFFF;
+}
+
+.profile-container {
+	width: 540px;
+	margin: 0 auto;
+	font-size: 2em;
+}
+
+.profile {
+	float: left;
+	margin: 0 15px 30px;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	background-size: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+
+.username {
+	display: none;
+	width: 150px;
+	height: 150px;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 0.7em;
+	text-shadow: 0 1px 1px #676767;
+}
+
+.container {
+	width: 150px;
+	height: 100px;
+	background-color: #1D366B;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.follower.container {
+	padding-bottom: 35px;
+}
+
+.count {
+	font-weight: 200;
+	font-size: 2.3em;
+}
+
+.heading {
+	font-size: 0.5em;
+	font-weight: 600;
+	margin-top: 3px;
 }

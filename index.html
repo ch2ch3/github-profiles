@@ -3,36 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="public/css/reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="public/css/styles.css">
 	<title>GitHub Profiles</title>
 </head>
 <body>
 	<div id="container">
 		<form id="add-profile">
-			<input type="text" id="username" placeholder="Enter a GitHub username">
+			<input type="text" id="get-username" placeholder="Enter a GitHub username" autofocus>
 			<button type="submit">Hit me!</button>
 		</form>
 		<main class="profile-container">
 		</main>
 		<template id="profile-template">
 			<article class="profile">
-				<section class="avatar">
-					<img src="{{avatar_url}}">
-				</section>
-				<section class="statistics">
-					<h3>
-						<a href="{{html_url}}">{{login}}</a>
-					</h3>
-					<strong>Repos: {{public_repos}}</strong>
-					<strong>Followers: {{followers}}</strong>
-				</section>
-				<br clear="all">
+				<a href="https://github.com/{{login}}"><div class="avatar" style="background-image: url('{{avatar_url}}')">
+					<p class="username">{{login}}</p>
+				</div></a>
+				<div class="repo container"><p class="repo count">{{public_repos}}</p><p class="repo heading">REPOS</p></div>
+				<div class="follower container"><p class="follower count">{{followers}}</p><p class="follower heading">FOLLOWERS</p></div>
 			</article>
 		</template>
 	</div>
 	<script src="public/js/lib/jquery-2.1.1.min.js"></script>
 	<script src="public/js/lib/mustache.js"></script>
-	<script src="public/js/lib/templateCheck.js"></script>
-	<script src="public/js/lib/gitHubProfiles.js"></script>
+	<script src="public/js/src/templateCheck.js"></script>
+	<script src="public/js/src/interface.js"></script>
 </body>
 </html>
