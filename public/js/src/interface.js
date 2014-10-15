@@ -11,13 +11,15 @@ $('document').ready(function(){
 			$(Mustache.render(template, user)).prependTo('.profile-container')
 			$(".profile-container .profile:gt(2)").remove();
 			if(user.followers > 999){
-				$('.profile:first-of-type .follower.count').css('font-size', '1.9em')
-				$('.profile:first-of-type .follower.count').css('margin-top', '+=8px')
-				$('.profile:first-of-type .follower.count').css('margin-bottom', '+=8px')
+				$('.profile:first-of-type .follower.count').css({'font-size': '1.9em',
+						'margin-top': '+=8px',
+						'margin-bottom': '+=8px'
+				})
 			} if(user.followers > 9999){
-				$('.profile:first-of-type .follower.count').css('font-size', '1.6em')
-				$('.profile:first-of-type .follower.count').css('margin-top', '+=5px')
-				$('.profile:first-of-type .follower.count').css('margin-bottom', '+=5px')
+				$('.profile:first-of-type .follower.count').css({'font-size': '1.6em',
+						'margin-top': '+=5px',
+						'margin-bottom': '+=5px'
+				})
 			}
 		}).fail(function(){
 			alert('Could not find this user.');
