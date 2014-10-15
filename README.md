@@ -1,6 +1,6 @@
 GitHub Profiles
 ===============
-This is a simple web page that displays information about a GitHub user when their username is entered, using AJAX.
+This is a simple web page that displays the public repo count and follower count of a specified GitHub user. When their username is entered, an AJAX get request is sent to the GitHub API. The response is rendered using Mustache and a template.
 
 Technologies used:
 - HTML5
@@ -9,6 +9,7 @@ Technologies used:
 - jQuery
 - AJAX
 - GitHub API
+- Mustache
 
 How to use
 ----------
