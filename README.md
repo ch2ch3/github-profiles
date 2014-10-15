@@ -1,6 +1,6 @@
 GitHub Profiles
 ===============
-This is a simple web page that displays information about a GitHub user when their username is entered.
+This is a simple web page that displays information about a GitHub user when their username is entered, using AJAX.
 
 Technologies used:
 - HTML5

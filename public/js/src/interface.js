@@ -10,6 +10,15 @@ $('document').ready(function(){
 			var template = $('#profile-template').html();
 			$(Mustache.render(template, user)).prependTo('.profile-container')
 			$(".profile-container .profile:gt(2)").remove();
+			if(user.followers > 999){
+				$('.profile:first-of-type .follower.count').css('font-size', '1.9em')
+				$('.profile:first-of-type .follower.count').css('margin-top', '+=8px')
+				$('.profile:first-of-type .follower.count').css('margin-bottom', '+=8px')
+			} if(user.followers > 9999){
+				$('.profile:first-of-type .follower.count').css('font-size', '1.6em')
+				$('.profile:first-of-type .follower.count').css('margin-top', '+=5px')
+				$('.profile:first-of-type .follower.count').css('margin-bottom', '+=5px')
+			}
 		}).fail(function(){
 			alert('Could not find this user.');
 		}).always(function(){
